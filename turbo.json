@@ -1,14 +1,16 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
+  "$schema": "https://turborepo.org/schema.json",
   "tasks": {
+    "lint": {},
+    "typecheck": {},
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "cache": false
     },
-    "lint": {
-      "dependsOn": ["^lint"]
+    "publish": {
+      "cache": false
+    },
+    "version": {
+      "cache": false
     },
     "dev": {
       "cache": false,

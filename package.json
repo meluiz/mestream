@@ -1,21 +1,23 @@
 {
   "name": "mestream",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "version": "turbo version",
+    "publish": "turbo publish",
+    "lint": "biome lint . --write",
+    "check": "biome check . --write",
+    "format": "biome format . --write",
+    "postinstall": "lefthook install"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "turbo": "^2.1.2",
-    "typescript": "^5.4.5"
+    "@biomejs/biome": "^1.8.3",
+    "@types/bun": "^1.1.6",
+    "lefthook": "^1.6.18",
+    "turbo": "^2.0.6",
+    "typescript": "^5.5.3"
   },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.1.29",
   "workspaces": [
     "apps/*",
     "packages/*"
