@@ -2,11 +2,11 @@ import 'server-only'
 
 import type { Session, User } from '@supabase/supabase-js'
 
-import { cache } from 'react'
 import { cookies } from 'next/headers'
+import { cache } from 'react'
 
-import token from './token'
 import client from './client'
+import token from './token'
 
 type Unauthorized = {
   user: null

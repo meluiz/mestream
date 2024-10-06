@@ -2,8 +2,8 @@ import client from './client'
 import create from './create'
 import verify from './verify'
 
-import signin from './signin'
 import getToken from './get-token'
+import signin from './signin'
 
 const { setSession, getSession, refreshSession } = client.auth
 

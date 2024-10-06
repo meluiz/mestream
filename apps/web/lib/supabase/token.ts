@@ -1,4 +1,4 @@
-import { type JWTPayload, jwtVerify, SignJWT } from 'jose'
+import { type JWTPayload, SignJWT, jwtVerify } from 'jose'
 import { env } from 'lib/env/server'
 
 export interface SessionPayload extends JWTPayload {

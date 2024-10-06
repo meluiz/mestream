@@ -4,8 +4,8 @@ import { DateTime } from 'luxon'
 
 import type { SessionPayload } from './types'
 
-import token from './token'
 import client from './client'
+import token from './token'
 
 export default async (payload: SessionPayload) => {
   const { data, error } = await client.auth.setSession(payload)

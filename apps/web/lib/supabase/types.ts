@@ -1,6 +1,6 @@
-import type { JWTPayload } from 'jose'
 import type { SupabaseClient as $SupabaseClient } from '@supabase/supabase-js'
 import type { SupabaseAuthClient as $SupabaseAuthClient } from '@supabase/supabase-js/dist/module/lib/SupabaseAuthClient'
+import type { JWTPayload } from 'jose'
 
 export interface SessionPayload extends JWTPayload {
   access_token: string
