@@ -1,7 +1,7 @@
 import { isCuid } from '@paralleldrive/cuid2'
-import string from './string'
-import number from './number'
 import boolean from './boolean'
+import number from './number'
+import string from './string'
 
 export const is = {
   string,
