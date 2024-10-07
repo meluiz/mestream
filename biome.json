@@ -25,10 +25,12 @@
     "rules": {
       "recommended": true,
       "suspicious": {
+        "noExplicitAny": "off",
         "noArrayIndexKey": "off"
       },
       "complexity": {
-        "noBannedTypes": "off"
+        "noBannedTypes": "off",
+        "noUselessFragments": "off"
       }
     }
   }

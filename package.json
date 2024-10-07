@@ -2,7 +2,9 @@
   "name": "mestream",
   "type": "module",
   "private": true,
+  "packageManager": "bun@1.1.29",
   "scripts": {
+    "dev": "turbo dev",
     "build": "turbo build",
     "version": "turbo version",
     "publish": "turbo publish",
