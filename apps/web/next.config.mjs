@@ -9,6 +9,9 @@ jiti('./lib/env/client')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   crossOrigin: 'anonymous',
+  images: {
+    remotePatterns: [{ hostname: 'cdn.discordapp.com' }],
+  },
   experimental: {
     // reactCompiler: true,
     staleTimes: {
