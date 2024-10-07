@@ -1,8 +1,8 @@
 'use client'
 import type React from 'react'
 
-import { type StyledComponent, styled } from 'pandacss/jsx'
 import Image from 'next/image'
+import { type StyledComponent, styled } from 'pandacss/jsx'
 
 type StyledProps = React.ComponentProps<typeof Styled> & {
   as?: React.ElementType
