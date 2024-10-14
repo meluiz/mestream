@@ -73,7 +73,7 @@ export default {
     },
   }),
   listItem: definePattern({
-    jsxName: 'listItem',
+    jsxName: 'ListItem',
     jsxElement: 'li',
     transform(props) {
       return {
@@ -87,7 +87,6 @@ export default {
     transform(props) {
       return {
         display: 'flex',
-        alignItems: 'center',
         flexDirection: 'column',
         gap: '0.625rem',
         ...props,
@@ -99,9 +98,37 @@ export default {
     transform(props) {
       return {
         display: 'flex',
-        alignItems: 'center',
         flexDirection: 'row',
         gap: '0.625rem',
+        ...props,
+      }
+    },
+  }),
+  icon: definePattern({
+    jsxName: 'Icon',
+    jsxElement: 'svg',
+    properties: {
+      size: {
+        type: 'number',
+      },
+    },
+    defaultValues: {
+      size: 20,
+      focusable: false,
+    },
+    transform(props) {
+      const { size } = props
+      const fontSize = size ? `${size / 16}rem` : '1rem'
+
+      return {
+        verticalAlign: 'middle',
+        width: '1rem',
+        height: '1rem',
+        fontSize,
+        color: {
+          _light: 'gray.950',
+          _dark: 'gray.50',
+        },
         ...props,
       }
     },

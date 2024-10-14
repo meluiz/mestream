@@ -2,8 +2,8 @@ import { definePreset } from '@pandacss/dev'
 import base from '@pandacss/preset-base'
 import panda from '@pandacss/preset-panda'
 
-import theme from './theme'
 import patterns from './patterns'
+import theme from './theme'
 import utilities from './utilities'
 
 export const preset = definePreset({
@@ -12,4 +12,13 @@ export const preset = definePreset({
   utilities,
   patterns,
   theme,
+  staticCss: {
+    css: [
+      {
+        properties: {
+          color: ['*'],
+        },
+      },
+    ],
+  },
 })
