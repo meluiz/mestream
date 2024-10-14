@@ -1,7 +1,7 @@
 import { styled } from 'pandacss/jsx'
 
-import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { GeistSans } from 'geist/font/sans'
 
 import { ClientProvider } from '#providers/layout'
 
