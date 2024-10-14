@@ -19,6 +19,7 @@ export default {
   authors: ['Luiz Felipe'],
   metadataBase: new URL(env.APP_URL),
   keywords: ['mestream', 'nextjs', 'twitch'],
+
   openGraph: {
     locale: 'en_US',
     type: 'website',

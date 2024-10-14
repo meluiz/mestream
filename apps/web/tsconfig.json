@@ -18,6 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "lib/*": ["./lib/*"],
+      "supabase/*": ["./supabase/*"],
       "locales/*": ["./locales/*"],
       "pandacss/*": ["./pandacss/*"],
       "#assets/*": ["./src/assets/*"],

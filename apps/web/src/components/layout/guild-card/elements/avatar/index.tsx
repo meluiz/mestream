@@ -1,8 +1,8 @@
+import Avvvatar from 'avvvatars-react'
 import { css } from 'pandacss/css'
 import { Box, Center } from 'pandacss/jsx'
 import { Img } from '#components/ui'
 import { is } from '#utils/helpers'
-import Avvvatar from 'avvvatars-react'
 
 import { P, match } from 'ts-pattern'
 
