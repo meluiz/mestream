@@ -20,7 +20,7 @@ const Styled = styled(
   },
   {
     defaultProps: {
-      draggable: false,
+      role: 'link',
     },
     shouldForwardProp: (props) => {
       return ['href'].includes(props)
