@@ -1,4 +1,4 @@
-import { createServerClient, type CookieOptions } from '@supabase/ssr'
+import { type CookieOptions, createServerClient } from '@supabase/ssr'
 import { NextRequest, NextResponse } from 'next/server'
 
 import { env } from 'lib/env/client'
@@ -30,10 +30,10 @@ export default async (request: NextRequest) => {
             request: { headers: request.headers },
           })
 
-          response.cookies.set({ name, value, ...options  })
+          response.cookies.set({ name, value, ...options })
         },
         remove: (name: string, options: CookieOptions) => {
-          request.cookies.set({ name, value: '', ...options });
+          request.cookies.set({ name, value: '', ...options })
 
           response = NextResponse.next({
             request: {
@@ -42,7 +42,7 @@ export default async (request: NextRequest) => {
           })
 
           response.cookies.set({ name, value: '', ...options })
-        }
+        },
       },
     })
 

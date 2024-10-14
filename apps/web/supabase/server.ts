@@ -12,15 +12,15 @@ const createSupabaseClient = () => {
   return createServerClient(supabaseUrl, supabaseAnonKey, {
     cookies: {
       get: (name: string) => {
-        return store.get(name)?.value;
+        return store.get(name)?.value
       },
       set: (name: string, value: string, options: CookieOptions) => {
         store.set({ name, value, ...options })
       },
       remove: (name: string, options: CookieOptions) => {
         store.set({ name, value: '', ...options })
-      }
-    }
+      },
+    },
   })
 }
 
