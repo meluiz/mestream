@@ -1,6 +1,6 @@
-import { Img } from '#components/ui'
 import { css } from 'pandacss/css'
 import { Box } from 'pandacss/jsx'
+import { Img } from '#components/ui'
 
 interface AvatarProps {
   src: string

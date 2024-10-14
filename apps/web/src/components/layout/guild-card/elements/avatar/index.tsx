@@ -1,7 +1,8 @@
 import { css } from 'pandacss/css'
 import { Box, Center } from 'pandacss/jsx'
-import { Avatar, Img } from '#components/ui'
+import { Img } from '#components/ui'
 import { is } from '#utils/helpers'
+import Avvvatar from 'avvvatars-react'
 
 import { P, match } from 'ts-pattern'
 
@@ -57,7 +58,7 @@ const GuidCardAvatar: React.FC<GuildCardAvatarProps> = (props) => {
             />
           ))
           .otherwise(() => (
-            <Avatar style="character" value={name} />
+            <Avvvatar style="character" value={name} />
           ))}
       </Center>
     </Box>
