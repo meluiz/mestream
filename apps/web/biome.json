@@ -8,11 +8,7 @@
     "indentStyle": "space",
     "formatWithErrors": false,
     "attributePosition": "auto",
-    "ignore": [
-      "**/.expo",
-      "**/node_modules",
-      "**/resources"
-    ]
+    "ignore": ["**/.expo", "**/node_modules", "**/resources"]
   },
   "javascript": {
     "formatter": {
@@ -84,10 +80,6 @@
         "noDuplicateClassMembers": "off"
       }
     },
-    "ignore": [
-      "**/.next",
-      "**/.turbo",
-      "**/node_modules"
-    ]
+    "ignore": ["**/.next", "**/.turbo", "**/node_modules"]
   }
 }
