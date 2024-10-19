@@ -10,9 +10,7 @@ const Page: Page.FC = async () => {
         position="relative"
         paddingY={24}
       >
-        <YStack gap="4rem">
-          Private
-        </YStack>
+        <YStack gap="4rem">Private</YStack>
       </styled.main>
     </Container>
   )
