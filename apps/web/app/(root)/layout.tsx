@@ -5,9 +5,6 @@ import { GeistSans } from 'geist/font/sans'
 
 import { ClientProvider } from '#providers/layout'
 
-import metadata from '#configs/metadata'
-import viewport from '#configs/viewport'
-
 import './globals.css'
 
 const Layout: Layout.FC = ({ children }) => {
@@ -33,5 +30,3 @@ const Layout: Layout.FC = ({ children }) => {
 }
 
 export default Layout
-
-export { metadata, viewport }

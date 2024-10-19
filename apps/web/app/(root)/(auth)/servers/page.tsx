@@ -1,7 +1,5 @@
 import { Container, YStack, styled } from 'pandacss/jsx'
 
-import { AuthHeader, Servers } from '#modules/servers'
-
 const Page: Page.FC = async () => {
   return (
     <Container>
@@ -13,8 +11,7 @@ const Page: Page.FC = async () => {
         paddingY={24}
       >
         <YStack gap="4rem">
-          <AuthHeader />
-          <Servers />
+          Private
         </YStack>
       </styled.main>
     </Container>
