@@ -11,16 +11,24 @@
       ]
     },
     "format": {
-      "outputs": []
+      "dependsOn": [
+        "^format"
+      ]
     },
     "lint": {
-      "outputs": []
+      "dependsOn": [
+        "^lint"
+      ]
     },
     "check": {
-      "outputs": []
+      "dependsOn": [
+        "^check"
+      ]
     },
     "typecheck": {
-      "outputs": []
+      "dependsOn": [
+        "^typecheck"
+      ]
     },
     "dev": {
       "persistent": true,
