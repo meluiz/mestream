@@ -1,0 +1,22 @@
+{
+  "name": "mestream",
+  "private": true,
+  "packageManager": "bun@1.1.33",
+  "scripts": {
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "build": "turbo build",
+    "check": "turbo check",
+    "format": "turbo format",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0",
+    "turbo": "^2.2.3"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
