@@ -1,7 +1,7 @@
-import ky from "ky";
+import ky from 'ky'
 
-import { env } from "server";
+import { env } from 'server'
 
 export default ky.create({
-	prefixUrl: `${env.APP_URL}/api`,
-});
+  prefixUrl: `${env.APP_URL}/api`,
+})

@@ -19,7 +19,6 @@
 		"paths": {
 			"pandacss/*": ["./pandacss/*"],
 			"library/*": ["./libs/*"],
-			"supabase/*": ["./supabase/*"],
 			"#assets/*": ["./src/assets/*"],
 			"#configs/*": ["./src/configs/*"],
 			"#components/*": ["./src/components/*"],

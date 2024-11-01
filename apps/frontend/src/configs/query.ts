@@ -1,6 +1,6 @@
 import { QueryClient } from '@tanstack/react-query'
-import { toast } from 'sonner'
 import { HTTPError } from 'ky'
+import { toast } from 'sonner'
 
 import { Duration } from 'luxon'
 
