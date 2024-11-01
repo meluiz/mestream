@@ -4,11 +4,7 @@
     "enabled": true
   },
   "files": {
-    "ignore": [
-      "coverage",
-      "**/*.{spec,test}.ts",
-      "**/*.js"
-    ]
+    "ignore": ["coverage", "**/*.{spec,test}.ts", "**/*.js"]
   },
   "vcs": {
     "enabled": true,
@@ -44,18 +40,8 @@
   },
   "linter": {
     "enabled": true,
-    "ignore": [
-      "**/.expo",
-      "**/node_modules",
-      "**/resources"
-    ],
-    "include": [
-      "packages/**/*",
-      "*.ts",
-      "*.tsx",
-      "*.mts",
-      "*.cts"
-    ],
+    "ignore": ["**/.expo", "**/node_modules", "**/resources"],
+    "include": ["packages/**/*", "*.ts", "*.tsx", "*.mts", "*.cts"],
     "rules": {
       "recommended": true,
       "a11y": {
