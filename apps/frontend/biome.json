@@ -38,6 +38,7 @@
       },
       "complexity": {
         "noBannedTypes": "off",
+        "noUselessFragments": "off",
         "noUselessTypeConstraint": "error"
       },
       "correctness": {
