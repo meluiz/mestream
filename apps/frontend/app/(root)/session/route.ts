@@ -8,6 +8,7 @@ export const GET = async (request: NextRequest) => {
     provider: 'discord',
     options: {
       redirectTo: `${new URL(request.url).origin}/session/callback`,
+      scopes: 'identify guilds guilds.members.read',
     },
   })
 

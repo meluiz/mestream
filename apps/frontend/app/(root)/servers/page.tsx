@@ -1,11 +1,24 @@
-import { profile } from 'library/supabase/agnostic'
-import { getSupabaseClient } from 'library/supabase/server'
+import { Container, YStack, styled } from "pandacss/jsx";
+
+import { AuthHeader, Servers } from "#modules/servers";
 
 const Page: Page.FC = async () => {
-  const supabase = await getSupabaseClient()
-  const { user } = await profile.get(supabase)
+	return (
+		<Container>
+			<styled.main
+				width="full"
+				minHeight="min-content"
+				display="block"
+				position="relative"
+				paddingY={24}
+			>
+				<YStack gap="4rem">
+					<AuthHeader />
+					<Servers />
+				</YStack>
+			</styled.main>
+		</Container>
+	);
+};
 
-  return <div>Hello, {user?.user_metadata.nickname}</div>
-}
-
-export default Page
+export default Page;
